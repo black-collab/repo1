@@ -16,7 +16,7 @@ public class AccountServiceTest {
 
     @Test
     public void testF() {
-        //m1
+        //m2
         HashMap<String, String> map = new HashMap<String, String>(2);
         map.put("u","你好");
         map.put("v","你好");
