@@ -19,6 +19,5 @@ public class QueryRunnerTest {
         QueryRunner runner = ac.getBean("runner",QueryRunner.class);
         QueryRunner runner1 = ac.getBean("runner",QueryRunner.class);
         System.out.println(runner == runner1);
-        //哈哈
     }
 }
