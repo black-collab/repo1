@@ -13,7 +13,7 @@ public class QueryRunnerTest {
 
     @Test
     public  void  testQueryRunner(){
-        //1.获取容易
+        //1.获取容易1
         ApplicationContext ac = new AnnotationConfigApplicationContext(SpringConfiguration.class);
         //2.获取queryRunner对象
         QueryRunner runner = ac.getBean("runner",QueryRunner.class);
