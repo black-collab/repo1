@@ -15,7 +15,7 @@ public class QueryRunnerTest {
     public  void  testQueryRunner(){
         //1.获取容易3
         ApplicationContext ac = new AnnotationConfigApplicationContext(SpringConfiguration.class);
-        //2.获取queryRunner对象
+        //2.获取queryRunner对象11
         QueryRunner runner = ac.getBean("runner",QueryRunner.class);
         QueryRunner runner1 = ac.getBean("runner",QueryRunner.class);
         System.out.println(runner == runner1);
