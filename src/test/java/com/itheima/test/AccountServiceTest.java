@@ -7,6 +7,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Set;
 
 /**
@@ -28,8 +30,16 @@ public class AccountServiceTest {
             int h;
             int hash = (h = s.hashCode()) ^ (h >>> 16);
             int index = hash & (16 - 1);
-            System.out.print(s+" "+hash+" ");
-            System.out.println(index);
+            //System.out.print(s+" "+hash+" ");
+            //System.out.println(index);
+        }
+        LinkedHashMap<String, String> m = new LinkedHashMap<String, String>();
+        m.put("zhangsan","1");
+        m.put("lisi","2");
+        m.put("wangwu","3");
+        Iterator<String> iterator = m.values().iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
         }
     }
 
