@@ -5,7 +5,7 @@ import com.itheima.domain.Account;
 import java.util.List;
 
 /**
- * 账户的持久层接口
+ * 账户的持久层接口1
  */
 public interface IAccountDao {
 
